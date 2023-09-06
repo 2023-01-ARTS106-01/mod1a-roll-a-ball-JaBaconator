@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Shields : MonoBehaviour {
+    Trigger trigger = new Trigger();
+
     // Start is called before the first frame update
     void Start() {
         
@@ -10,6 +12,6 @@ public class Shields : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (onTriggerEnter) { }
+        trigger OnTriggerEnter;
     }
 }
