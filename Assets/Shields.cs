@@ -7,10 +7,9 @@ public class Shields : MonoBehaviour {
     public GameObject shieldB;
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("Trigger")) {
+        if (other.gameObject.CompareTag("Player")) {
             shieldA.gameObject.SetActive(false);
             shieldB.gameObject.SetActive(false);
-            other.gameObject.SetActive(false);
         }
     }
 }
